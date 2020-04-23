@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Import routes
-let apiRoutes = require("./api-routes.js")
+let apiRoutes = require("./Router/api-routes.js")
 // Use Api routes in the App
 app.use('/api', apiRoutes)
 // Import Mongoose
