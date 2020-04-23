@@ -1,5 +1,5 @@
 // Import contact model
-Department = require('./departmentModel');
+Department = require('../models/department');
 // Handle index actions
 exports.index = (req, res) => {
     Department.get((err, department) => {

@@ -1,5 +1,5 @@
 // Import contact model
-Employee = require('./employeeModel');
+Employee = require('../models/employee');
 // Handle index actions
 exports.index = function (req, res) {
     Employee.get((err, employee) => {

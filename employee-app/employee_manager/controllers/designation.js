@@ -1,5 +1,5 @@
 // Import contact model
-Designation = require('./designationModel');
+Designation = require('../models/designation');
 // Handle index actions
 exports.index = (req, res) => {
     Designation.get((err, designation) => {

@@ -9,11 +9,11 @@ router.get('/', function (req, res) {
 });
 
 // Import employee controller
-var employeeController = require('./employeeController');
+var employeeController = require('../controllers/employee');
 //Import department controller
-var departmentController = require('./departmentController');
+var departmentController = require('../controllers/department');
 //Import designation controller
-var designationController = require('./designationController');
+var designationController = require('../controllers/designation');
 // Contact routes
 router.route('/employees')
     .get(employeeController.index)
